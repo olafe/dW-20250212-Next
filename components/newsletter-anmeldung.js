@@ -7,7 +7,9 @@ import { useTranslations } from 'next-intl'
 const NewsletterAnmeldung = (props) => {
   return (
     <>
-      <div className="newsletter-anmeldung-two-middle">
+      <div
+        className={`newsletter-anmeldung-two-middle ${props.rootClassName} `}
+      >
         <h1 className="newsletter-anmeldung-text1 H3">
           {props.heading ?? (
             <Fragment>
@@ -68,6 +70,9 @@ const NewsletterAnmeldung = (props) => {
           .newsletter-anmeldung-text4 {
             display: inline-block;
           }
+          .newsletter-anmeldungroot-class-name {
+            max-width: auto;
+          }
         `}
       </style>
     </>
@@ -77,11 +82,13 @@ const NewsletterAnmeldung = (props) => {
 NewsletterAnmeldung.defaultProps = {
   heading: undefined,
   text: undefined,
+  rootClassName: '',
 }
 
 NewsletterAnmeldung.propTypes = {
   heading: PropTypes.element,
   text: PropTypes.element,
+  rootClassName: PropTypes.string,
 }
 
 export default NewsletterAnmeldung

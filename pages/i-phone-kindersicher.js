@@ -285,6 +285,8 @@ const IPhoneKindersicher = (props) => {
             width: 100%;
             height: 100px;
             display: grid;
+            max-width: 1200px;
+            align-self: center;
             grid-template-columns: 1fr 1fr 1fr 1fr;
           }
           .i-phone-kindersicher-text10 {
@@ -339,6 +341,8 @@ const IPhoneKindersicher = (props) => {
             width: 100%;
             height: auto;
             display: grid;
+            max-width: 1200px;
+            align-self: center;
             grid-template-rows: 1fr 1fr;
             grid-template-columns: 1fr 1fr 1fr 1fr;
           }
@@ -403,6 +407,8 @@ const IPhoneKindersicher = (props) => {
             width: 100%;
             height: 100%;
             display: grid;
+            max-width: 1200px;
+            align-self: center;
             grid-template-rows: 1fr 1fr;
             grid-template-columns: 1fr 1fr 1fr 1fr;
           }
@@ -439,6 +445,8 @@ const IPhoneKindersicher = (props) => {
             width: 100%;
             height: 100%;
             display: grid;
+            max-width: 1200px;
+            align-self: center;
             grid-template-rows: 1fr 1fr;
             grid-template-columns: 1fr 1fr 1fr 1fr;
           }

@@ -142,6 +142,7 @@ const Home = (props) => {
                 </span>
               </Fragment>
             }
+            rootClassName="newsletter-anmeldungroot-class-name"
           ></NewsletterAnmeldung>
         </div>
         <div className="home-row-three">
@@ -183,6 +184,7 @@ const Home = (props) => {
                 </span>
               </Fragment>
             }
+            rootClassName="beitrge-listeroot-class-name5"
           ></BeitrgeListe>
         </div>
       </div>
@@ -200,6 +202,8 @@ const Home = (props) => {
             width: 100%;
             height: 100px;
             display: grid;
+            max-width: 1200px;
+            align-self: center;
             grid-template-columns: 1fr 1fr 1fr 1fr;
           }
           .home-text10 {
@@ -254,11 +258,14 @@ const Home = (props) => {
             width: 100%;
             height: auto;
             display: grid;
+            max-width: 1200px;
+            align-self: center;
             grid-template-rows: 1fr 1fr;
             grid-template-columns: 1fr 1fr 1fr 1fr;
           }
           .home-one-middle {
             height: 100%;
+            max-width: auto;
             grid-row-end: 3;
             grid-row-start: 1;
             grid-column-end: 4;
@@ -293,6 +300,7 @@ const Home = (props) => {
           }
           .home-one-left1 {
             height: 100%;
+            max-width: auto;
             grid-row-end: 3;
             grid-row-start: 1;
             grid-column-end: 2;
@@ -309,6 +317,8 @@ const Home = (props) => {
             width: 100%;
             height: 100%;
             display: grid;
+            max-width: 1200px;
+            align-self: center;
             grid-template-rows: 1fr 1fr;
             grid-template-columns: 1fr 1fr 1fr 1fr;
           }
@@ -335,6 +345,8 @@ const Home = (props) => {
             width: 100%;
             height: 100%;
             display: grid;
+            max-width: 1200px;
+            align-self: center;
             grid-template-rows: 1fr 1fr;
             grid-template-columns: 1fr 1fr 1fr 1fr;
           }

@@ -85,14 +85,25 @@ const Invasion = (props) => {
                   Die Invasion der Plattformen: Wie Big Tech Familien
                   auseinandertreibt
                 </h1>
-                <video
-                  src="https://youtu.be/75nYdEDqsvc"
-                  muted="true"
-                  poster="https://play.teleporthq.io/static/svg/videoposter.svg"
-                  autoPlay="true"
-                  className="invasion-video"
-                ></video>
+                <a
+                  href="https://www.youtube.com/watch?v=75nYdEDqsvc"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="invasion-link1"
+                >
+                  <img
+                    src="/the-guardian-interviews-600w.jpg"
+                    alt="image"
+                    className="invasion-image"
+                  />
+                </a>
                 <span className="invasion-text23">
+                  <span className="Small">
+                    Residents of Rome, Paris and London react to
+                    Australia&apos;s social media ban for under-16s
+                  </span>
+                  <br></br>
+                  <br></br>
                   <span>
                     „Sich wehren müssen“ gehört zum Leben unserer Kinder und es
                     wird immer anspruchsvoller. Viele Eltern führen einen
@@ -166,9 +177,9 @@ const Invasion = (props) => {
                   href="https://www.theguardian.com/technology/2024/dec/02/australia-social-media-children-ban"
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="invasion-link1"
+                  className="invasion-link2"
                 >
-                  <span className="invasion-text44">The Guardian</span>
+                  <span className="invasion-text47">The Guardian</span>
                   <br></br>
                   <span>
                     «Warum das Silicon Valley wegen Australiens
@@ -179,9 +190,9 @@ const Invasion = (props) => {
                   href="https://www.nzz.ch/meinung/australien-soziale-netzwerke-unter-16-verboten-ein-fehler-ld.1860377"
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="invasion-link2"
+                  className="invasion-link3"
                 >
-                  <span className="invasion-text47">NZZ</span>
+                  <span className="invasion-text50">NZZ</span>
                   <br></br>
                   <span>
                     «Australien verbietet die Nutzung sozialer Netzwerke für
@@ -193,9 +204,9 @@ const Invasion = (props) => {
                   href="https://www.politico.eu/article/france-doubles-down-on-social-media-age-limit-at-15/"
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="invasion-link3"
+                  className="invasion-link4"
                 >
-                  <span className="invasion-text50">Politico</span>
+                  <span className="invasion-text53">Politico</span>
                   <br></br>
                   <span>
                     Frankreich verschärft Mindestalter von 15 Jahren für die
@@ -206,7 +217,7 @@ const Invasion = (props) => {
                   href="https://parlinfo.aph.gov.au/parlInfo/download/legislation/bills/r7284_aspassed/toc_pdf/24150b01.pdf;fileType=application%2Fpdf#search=%22legislation/bills/r7284_aspassed/0000%22"
                   target="_blank"
                   rel="noreferrer noopener"
-                  className="invasion-link4"
+                  className="invasion-link5"
                 >
                   <span className="Bold">Parliament of Australia</span>
                   <br></br>
@@ -224,7 +235,7 @@ const Invasion = (props) => {
           <div className="invasion-one-left2"></div>
           <div className="invasion-one-right2"></div>
           <div className="invasion-two-middle1">
-            <h1 className="invasion-text56 H3">
+            <h1 className="invasion-text59 H3">
               Kostenlose Inhalte von digitales Wohlsein
             </h1>
             <span>
@@ -255,12 +266,12 @@ const Invasion = (props) => {
             <BeitrgeListe
               heading={
                 <Fragment>
-                  <span className="invasion-text58">Beiträge</span>
+                  <span className="invasion-text61">Beiträge</span>
                 </Fragment>
               }
               heading1={
                 <Fragment>
-                  <span className="invasion-text59">
+                  <span className="invasion-text62">
                     digitales Wohlsein – Das Internet der Zukunft mit dem
                     Menschen im Zentrum
                   </span>
@@ -268,7 +279,7 @@ const Invasion = (props) => {
               }
               heading2={
                 <Fragment>
-                  <span className="invasion-text60">
+                  <span className="invasion-text63">
                     Die Invasion der Plattformen: Wie Big Tech Familien
                     auseinandertreibt.
                   </span>
@@ -276,14 +287,14 @@ const Invasion = (props) => {
               }
               heading3={
                 <Fragment>
-                  <span className="invasion-text61">
+                  <span className="invasion-text64">
                     iPhone kindersicher: Nur eine App zulassen
                   </span>
                 </Fragment>
               }
               heading4={
                 <Fragment>
-                  <span className="invasion-text62">
+                  <span className="invasion-text65">
                     Kein Spotify Kids in der Schweiz: Was Eltern wissen sollten.
                   </span>
                 </Fragment>
@@ -307,6 +318,8 @@ const Invasion = (props) => {
             width: 100%;
             height: 100px;
             display: grid;
+            max-width: 1200px;
+            align-self: center;
             grid-template-columns: 1fr 1fr 1fr 1fr;
           }
           .invasion-text10 {
@@ -361,6 +374,8 @@ const Invasion = (props) => {
             width: 100%;
             height: auto;
             display: grid;
+            max-width: 1200px;
+            align-self: center;
             grid-template-rows: 1fr 1fr;
             grid-template-columns: 1fr 1fr 1fr 1fr;
           }
@@ -395,38 +410,42 @@ const Invasion = (props) => {
             padding-top: var(--dl-space-space-unit);
             padding-bottom: var(--dl-space-space-unit);
           }
-          .invasion-video {
-            width: 320px;
-            height: 180px;
+          .invasion-link1 {
+            display: contents;
+          }
+          .invasion-image {
+            width: 600px;
+            object-fit: cover;
+            text-decoration: none;
           }
           .invasion-text23 {
             width: 100%;
             display: block;
             overflow: auto;
-            padding-top: var(--dl-space-space-unit);
-            padding-bottom: var(--dl-space-space-unit);
-          }
-          .invasion-link1 {
-            padding-bottom: var(--dl-space-space-unit);
-          }
-          .invasion-text44 {
-            font-style: normal;
-            font-weight: 600;
+            padding-top: 0px;
+            padding-bottom: 0px;
           }
           .invasion-link2 {
             padding-bottom: var(--dl-space-space-unit);
           }
           .invasion-text47 {
+            font-style: normal;
             font-weight: 600;
           }
           .invasion-link3 {
             padding-bottom: var(--dl-space-space-unit);
           }
           .invasion-text50 {
-            font-style: normal;
             font-weight: 600;
           }
           .invasion-link4 {
+            padding-bottom: var(--dl-space-space-unit);
+          }
+          .invasion-text53 {
+            font-style: normal;
+            font-weight: 600;
+          }
+          .invasion-link5 {
             padding-bottom: var(--dl-space-space-unit);
           }
           .invasion-one-left1 {
@@ -447,6 +466,8 @@ const Invasion = (props) => {
             width: 100%;
             height: 100%;
             display: grid;
+            max-width: 1200px;
+            align-self: center;
             grid-template-rows: 1fr 1fr;
             grid-template-columns: 1fr 1fr 1fr 1fr;
           }
@@ -470,7 +491,7 @@ const Invasion = (props) => {
             grid-column-end: 4;
             grid-column-start: 2;
           }
-          .invasion-text56 {
+          .invasion-text59 {
             padding-bottom: var(--dl-space-space-unit);
           }
           .invasion-container5 {
@@ -483,6 +504,8 @@ const Invasion = (props) => {
             width: 100%;
             height: 100%;
             display: grid;
+            max-width: 1200px;
+            align-self: center;
             grid-template-rows: 1fr 1fr;
             grid-template-columns: 1fr 1fr 1fr 1fr;
           }
@@ -506,19 +529,19 @@ const Invasion = (props) => {
             grid-column-end: 4;
             grid-column-start: 2;
           }
-          .invasion-text58 {
-            display: inline-block;
-          }
-          .invasion-text59 {
-            display: inline-block;
-          }
-          .invasion-text60 {
-            display: inline-block;
-          }
           .invasion-text61 {
             display: inline-block;
           }
           .invasion-text62 {
+            display: inline-block;
+          }
+          .invasion-text63 {
+            display: inline-block;
+          }
+          .invasion-text64 {
+            display: inline-block;
+          }
+          .invasion-text65 {
             display: inline-block;
           }
           @media (max-width: 991px) {

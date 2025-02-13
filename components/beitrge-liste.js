@@ -128,6 +128,10 @@ const BeitrgeListe = (props) => {
           .beitrge-listeroot-class-name1 {
             padding-top: var(--dl-space-space-unit);
           }
+
+          .beitrge-listeroot-class-name5 {
+            max-width: auto;
+          }
         `}
       </style>
     </>
